@@ -18,11 +18,37 @@ namespace MultipleThreeAndFive
          */
         public bool IsMultipleOfThreeOrFive(int num)
         {
+            if(num < 0)
+            {
+                throw new NegativeInputException("Negative input provided, expected positive input!");
+            }
+
             if (num % 3 == 0 || num % 5 == 0)
             {
                 return true;
             }
             return false;
         }
+    }
+
+    /**
+     * ClassName: NegativeInputException
+     * 
+     * Thrown when a negative input is provided where positive inupt is expected
+     */
+    public class NegativeInputException : Exception
+    {
+        /**
+         * Constructor
+         */
+        public NegativeInputException() : base(){}
+
+        /**
+         * Constructor
+         * 
+         * @param message, the error message 
+         */
+        public NegativeInputException(string message) : base(message){}
+
     }
 }

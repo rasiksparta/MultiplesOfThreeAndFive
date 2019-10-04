@@ -21,6 +21,12 @@ namespace MultipleThreeAndFive.Test
         }
 
         [Test]
+        public void TestNegativeInput()
+        {
+            Assert.Throws<NegativeInputException>(delegate { mtf.IsMultipleOfThreeOrFive(-1); });
+        }
+
+        [Test]
         public void TestRangeHasNegativeBound()
         {
 
