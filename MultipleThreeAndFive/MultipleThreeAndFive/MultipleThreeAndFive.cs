@@ -8,7 +8,7 @@ namespace MultipleThreeAndFive
 {
     public class MultipleThreeAndFive
     {
-        public MultipleThreeAndFive(){}
+        public MultipleThreeAndFive() { }
 
         /**
          * Checks if a given non negative integer is a multiple of three or five
@@ -18,7 +18,7 @@ namespace MultipleThreeAndFive
          */
         public bool IsMultipleOfThreeOrFive(int num)
         {
-            if(num < 0)
+            if (num < 0)
             {
                 throw new NegativeInputException("Negative input provided, expected positive input!");
             }
@@ -28,6 +28,24 @@ namespace MultipleThreeAndFive
                 return true;
             }
             return false;
+        }
+
+        /**
+         * 
+         */
+        public List<int> EvaulateNumbersInRange(int boundA, int boundB)
+        {
+            List<int> list = new List<int>();
+
+            for (int num = boundA; num <= boundB; num++)
+            {
+                if (IsMultipleOfThreeOrFive(num))
+                {
+                    list.Add(num);
+                }
+            }
+
+            return list;
         }
     }
 
@@ -41,14 +59,44 @@ namespace MultipleThreeAndFive
         /**
          * Constructor
          */
-        public NegativeInputException() : base(){}
+        public NegativeInputException() : base() { }
 
         /**
          * Constructor
          * 
          * @param message, the error message 
          */
-        public NegativeInputException(string message) : base(message){}
+        public NegativeInputException(string message) : base(message) { }
+    }
 
+    public class InvalidBoundException : Exception
+    {
+        public int LowerBound { get; }
+        public int UpperBound { get; }
+ 
+        /**
+         * Constructor
+         */
+        public InvalidBoundException() : base() { }
+
+        /**
+         * Constructor
+         * 
+         * @param message
+         */
+        public InvalidBoundException(string message) : base(message) { } 
+
+        /**
+         * Constructor
+         * 
+         * @param message
+         * @param lowerBound
+         * @param upperBound
+         */
+        public InvalidBoundException(string message, int lowerBound, int upperBound) :base(message)
+        {
+            LowerBound = lowerBound;
+            UpperBound = upperBound;
+        }
     }
 }
