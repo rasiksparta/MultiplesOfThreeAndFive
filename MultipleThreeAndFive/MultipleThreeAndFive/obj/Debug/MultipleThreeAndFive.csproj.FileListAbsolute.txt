@@ -1,0 +1,6 @@
+C:\Users\Rasik Rana\Desktop\csharp\week8\wednesday\MultiplesOfThreeAndFive\MultipleThreeAndFive\MultipleThreeAndFive\bin\Debug\MultipleThreeAndFive.dll
+C:\Users\Rasik Rana\Desktop\csharp\week8\wednesday\MultiplesOfThreeAndFive\MultipleThreeAndFive\MultipleThreeAndFive\bin\Debug\MultipleThreeAndFive.pdb
+C:\Users\Rasik Rana\Desktop\csharp\week8\wednesday\MultiplesOfThreeAndFive\MultipleThreeAndFive\MultipleThreeAndFive\obj\Debug\MultipleThreeAndFive.csprojAssemblyReference.cache
+C:\Users\Rasik Rana\Desktop\csharp\week8\wednesday\MultiplesOfThreeAndFive\MultipleThreeAndFive\MultipleThreeAndFive\obj\Debug\MultipleThreeAndFive.csproj.CoreCompileInputs.cache
+C:\Users\Rasik Rana\Desktop\csharp\week8\wednesday\MultiplesOfThreeAndFive\MultipleThreeAndFive\MultipleThreeAndFive\obj\Debug\MultipleThreeAndFive.dll
+C:\Users\Rasik Rana\Desktop\csharp\week8\wednesday\MultiplesOfThreeAndFive\MultipleThreeAndFive\MultipleThreeAndFive\obj\Debug\MultipleThreeAndFive.pdb
